@@ -20,7 +20,7 @@ end
 
 function __weather_get_ip -d "Get the current device's public IP address"
   # Attempt to get our external IP using a web service.
-  if set ip (weather.fetch "http://ipecho.net/plain")
+  if set ip (weather.fetch "https://ipecho.net/plain")
     echo $ip
   end
 
